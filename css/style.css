@@ -110,9 +110,6 @@ body {
 	font-size: 1.5rem;
 	font-weight: 400;
 	animation: bg-animation 20s infinite alternate;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 }
 
 @keyframes bg-animation {
@@ -134,13 +131,8 @@ body {
 }
 
 #wrapper {
-	background: var(--clr-bg3);
-	max-width: 48em;
-	display: inline-block;
 	padding-top: 1.5em;
 	padding-inline: 2.5em;
-	border-radius: 1em;
-	box-shadow: 0 0 3rem rgba(0, 0, 0, 0.6);
 	text-align: center;
 }
 
@@ -152,9 +144,30 @@ body {
 }
 
 h1 {
-	font-size: 6em;
+	font-size: 4em;
 	font-family: 'Dancing Script', cursive;
 	font-weight: 700;
+}
+
+@media screen and (min-width: 1010px) {
+	body {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	#wrapper {
+		display: inline-block;
+		max-width: 1280px;
+		background: var(--clr-bg3);
+		border-radius: 1em;
+		box-shadow: 0 0 3rem rgba(0, 0, 0, 0.6);
+		margin: 3em;
+	}
+
+	h1 {
+		font-size: 6em;
+	}
 }
 
 .button {
