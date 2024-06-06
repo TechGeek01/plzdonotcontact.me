@@ -9,8 +9,8 @@ const animateMove = (element, prop, pixels) =>
 
 ["mouseover", "click"].forEach(function (el) {
 	button.addEventListener(el, function (event) {
-		const top = getRandomNumber(window.innerHeight - this.offsetHeight) + this.offsetHeight / 2;
-		const left = getRandomNumber(window.innerWidth - this.offsetWidth) + this.offsetWidth / 2;
+		const top = getRandomNumber(window.innerHeight - this.offsetHeight);
+		const left = getRandomNumber(window.innerWidth - this.offsetWidth);
 
 		animateMove(this, "left", left).play();
 		animateMove(this, "top", top).play();
