@@ -4,7 +4,7 @@
 	/* General colors */
 	--clr-bg1: #202018;
 	--clr-bg2: #323230;
-	--clr-bg3: #323230;
+	--clr-bg3: #343432;
 
 	--clr-brand: #c1df11;
 	--clr-bg: #222;
@@ -134,13 +134,13 @@ body {
 }
 
 #wrapper {
-	background: #363630;
+	background: var(--clr-bg3);
 	max-width: 48em;
 	display: inline-block;
 	padding-top: 1.5em;
 	padding-inline: 2.5em;
 	border-radius: 1em;
-	box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.6);
+	box-shadow: 0 0 3rem rgba(0, 0, 0, 0.6);
 	text-align: center;
 }
 
